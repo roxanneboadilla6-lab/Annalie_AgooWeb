@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agoo Tourism Website</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<div class="container">
+<a class="navbar-brand" href="#">Agoo Tourism</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+<li class="nav-item"><a class="nav-link" href="#festivals">Festivals</a></li>
+<li class="nav-item"><a class="nav-link" href="#business">Businesses</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+<div id="home" class="bg-dark text-white text-center p-5">
+<h1 class="display-4">Welcome to Agoo, La Union</h1>
+<p>Enjoy your stay and make the most of the warm hospitality that this historic town has to offer!</p>
+</div>
+
+<!-- CAROUSEL -->
+<div class="container mt-4">
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+<img src="images/images.basilica.jpg" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="images/images.beach aco.jpg" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="images/images.lakay ago.jpg" class="d-block w-100">
+</div>
+
+</div>
+
+<button class="carousel-control-prev" data-bs-target="#carouselExample" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next" data-bs-target="#carouselExample" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+
+</div>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="container mt-5">
+<h2 class="text-center">About Agoo</h2>
+<p>Agoo is one of the oldest towns in La Union known for its rich history, religious heritage, and beautiful coastal attractions.</p>
+
+<div class="row text-center">
+    <div class="col=md-4">
+        <div class="card h-100 shadow-smp-3">
+            <h4>Mission</h4>
+<p>To promote Agoo as a sustainable tourism destination while preserving its culture and environment.</p>
+        </div>
+    </div>
+
+    <div class="col=md-4">
+        <div class="card h-100 shadow-smp-3">
+            <h4>Vision</h4>
+<p>To become a leading tourism hub in La Union known for heritage and hospitality.</p>
+        </div>
+    </div>
+
+    <div class="col=md-4">
+        <div class="card h-100 shadow-smp-3">
+            <h4>Values</h4>
+<p>Faith, Unity, Culture, Sustainability</p>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!-- ATTRACTIONS -->
+<div id="attractions" class="container mt-5">
+<h2 class="text-center mb-4">Tourist Attractions</h2>
+<div class="row g-4">
+
+<!-- Basilica -->
+<div class="col-md-4">
+<div class="card">
+<img src="images/images.basilica.jpg" class= width="300" height="200" style="object-fit: cover;">
+<div class="card-body">
+<h5>Basilica Minore</h5>
+<p>Historic Catholic church in Agoo and a popular pilgrimage site.</p>
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#m1">View More</button>
+</div>
+</div>
+</div>
+
+<!-- Beach -->
+<div class="col-md-4">
+<div class="card">
+<img src="images/images.beach aco.jpg" class="img-top">
+<div class="card-body">
+<h5>Agoo Beach</h5>
+<p>Relaxing coastal destination.</p>
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#m2">View More</button>
+</div>
+</div>
+</div>
+
+<!-- Eco Park -->
+<div class="col-md-4">
+<div class="card">
+<img src="images/images.eco.webp" class=width="300" height="200" style="object-fit: cover;">
+<div class="card-body">
+<h5>Agoo Eco Park</h5>
+<p>Nature and family park.</p>
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#m3">View More</button>
+</div>
+</div>
+</div>
+
+<!-- Marcos Bust -->
+<div class="col-md-4">
+<div class="card">
+<img src="images/images.eagle.jfif" class="width="300" height="200" style="object-fit: cover;">
+<div class="card-body">
+<h5>Marcos Bust</h5>
+<p>Historic Eagle of the North site.</p>
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#m4">View More</button>
+</div>
+</div>
+</div>
+
+<!-- Plaza -->
+<div class="col-md-4">
+<div class="card">
+<img src="images/images.plaza.jfif" class="width="300" height="200" style="object-fit: cover;">
+<div class="card-body">
+<h5>Agoo Plaza</h5>
+<p>Town center and gathering place.</p>
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#m5">View More</button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- MODALS -->
+<div class="modal fade" id="m1"><div class="modal-dialog"><div class="modal-content"><div class="modal-body">Famous basilica and pilgrimage site.</div></div></div></div>
+<div class="modal fade" id="m2"><div class="modal-dialog"><div class="modal-content"><div class="modal-body">It is a relaxing spot for swimming, picmics, and enjoying beautiful sunset.</div></div></div></div>
+<div class="modal fade" id="m3"><div class="modal-dialog"><div class="modal-content"><div class="modal-body">Eco-friendly park for relaxation.</div></div></div></div>
+<div class="modal fade" id="m4"><div class="modal-dialog"><div class="modal-content"><div class="modal-body">The site attracts visitors for its unique design and cultural significant.</div></div></div></div>
+<div class="modal fade" id="m5"><div class="modal-dialog"><div class="modal-content"><div class="modal-body">Public plaza for events and gatherings.</div></div></div></div>
+
+<!-- FESTIVALS -->
+<div id="festivals" class="container mt-5">
+<h2 class="text-center">Festivals</h2>
+<div class="row">
+
+<div class="col-md-4">
+<div class="card">
+<img src="images/images.town.jpg" class="width="300" height="200" style="object-fit: cover;">
+<div class="card-body">
+<h5>Town Fiesta</h5>
+<p>Celebrating our roots and colors.</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="images/images.religious.webp" class="width="300" height="200" style="object-fit: cover;">
+<div class="card-body">
+<h5>Religious Festival</h5>
+<p>A town united in faith and gratitude.</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="images/images.culture.webp" class="width="300" height="200" style="object-fit: cover;">
+<div class="card-body">
+<h5>Cultural Festival</h5>
+<p>Our history, our pride, our story.</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- BUSINESSES -->
+<div id="business" class="container mt-5">
+<h2 class="text-center mb-4">Local Businesses</h2>
+
+<div class="row g-4">
+
+<!-- RESTAURANT 1 -->
+<div class="col-md-4">
+<div class="card">
+<img src="images/images.makkan.jpg" class="width="300" height="200" style="object-fit: cover;">
+<div class="card-body">
+<h5>Makkan Ilocano Restaurant</h5>
+<p>Taste and heritage of Ilocos.</p>
+<p><strong>Contact:</strong> 0939 386 7618</p>
+<p><strong>Location:</strong> National Highway, Agoo, La, Union</p>
+</div>
+</div>
+</div>
+
+<!-- CAFE 2 -->
+<div class="col-md-4">
+<div class="card">
+<img src="images/images.ae.jfif" class="width="300" height="200" style="object-fit: cover;">
+<div class="card-body">
+<h5>Ae Cafe & Bistro</h5>
+<p>Every cup tells a story.</p>
+<p><strong>Contact:</strong> aecafe.launion@gmail.com</p>
+<p><strong>Location:</strong> Balwarte, Agoo, Philippines, 2504</p>
+</div>
+</div>
+</div>
+
+<!-- RESORT 1 -->
+<div class="col-md-4">
+<div class="card">
+<img src="images/images.anchor.jfif" class="width="300" height="200" style="object-fit: cover;">
+<div class="card-body">
+<h5>Anchor Resort</h5>
+<p>Every moment feels like a gentle tide.</p>
+<p><strong>Contact:</strong> 0976 358 4183</p>
+<p><strong>Location:</strong> Santa Maria, Agoo, Philippines, 2504</p>
+</div>
+</div>
+</div>
+
+<!-- RESORT 2 -->
+<div class="col-md-4">
+<div class="card">
+<img src="images/images.the gulf.jfif" class="width="300" height="200" style="object-fit: cover;">
+<div class="card-body">
+<h5>The Gulf Beach</h5>
+<p>Sun, sea, and serenity await.</p>
+<p><strong>Contact:</strong> thegulfhouseph@gmail.com</p>
+<p><strong>Location:</strong> San Manuel Sur, Agoo, Philippines</p>
+</div>
+</div>
+</div>
+
+<!-- HOTEL -->
+<div class="col-md-4">
+<div class="card">
+<img src="images/images.arko hotel.jpg" class="width="300" height="200" style="object-fit: cover;">
+<div class="card-body">
+<h5>Arko Hotel</h5>
+<p>Rest easy, wake up refreshed.</p>
+<p><strong>Contact:</strong> 0966 188 2322</p>
+<p><strong>Location:</strong> San Jose Sur, Agoo, Philippines, 2504</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="container mt-5">
+<h2 class="text-center">Contact</h2>
+
+<div class="row">
+<div class="col-md-6">
+<form>
+<input type="text" class="form-control mb-2" placeholder="Name" required>
+<input type="email" class="form-control mb-2" placeholder="Email" required>
+<textarea class="form-control mb-2" placeholder="Message" required></textarea>
+<button class="btn btn-primary">Send</button>
+</form>
+</div>
+
+<div class="col-md-6">
+<iframe class="w-100" height="300"
+src="https://maps.google.com/maps?q=Agoo%20La%20Union&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+</div>
+</div>
+
+<div class="text-center mt-3">
+<a href="#"><i class="bi bi-facebook fs-3"></i></a>
+<a href="#"><i class="bi bi-instagram fs-3"></i></a>
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3 mt-5">
+<p> Agoo Tourism</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
